@@ -370,6 +370,9 @@ output:
 - platform: esp8266_pwm
   pin: D7
   id: buzzer
+- platform: gpio
+  pin: D8
+  id: activity_led_output
 
 binary_sensor:
   - platform: status
@@ -396,11 +399,6 @@ text_sensor:
 rtttl:
   output: buzzer
 
-# Configure LED
-led:
-  - platform: gpio
-    pin: D8
-    id: activity_led_output
 
 light:
   - platform: binary
