@@ -397,7 +397,7 @@ rtttl:
   output: buzzer
 
 # Configure LED
-output:
+led:
   - platform: gpio
     pin: D8
     id: activity_led_output
