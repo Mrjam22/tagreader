@@ -366,10 +366,6 @@ pn532_i2c:
     - homeassistant.event:
         event: esphome.tag_removed
 # Define the buzzer output
-output:
-- platform: esp8266_pwm
-  pin: D7
-  id: buzzer
 - platform: gpio
   pin: D8
   id: activity_led_output
@@ -394,10 +390,6 @@ text_sensor:
       name: "${friendly_name} Connected SSID"
       icon: mdi:wifi-strength-2
       entity_category: diagnostic
-
-# Define buzzer as output for RTTTL
-rtttl:
-  output: buzzer
 
 
 light:
