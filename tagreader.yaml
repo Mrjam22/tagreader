@@ -366,6 +366,7 @@ pn532_i2c:
     - homeassistant.event:
         event: esphome.tag_removed
 # Define the buzzer output
+output:
 - platform: gpio
   pin: D8
   id: activity_led_output
