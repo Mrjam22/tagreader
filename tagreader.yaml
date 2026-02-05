@@ -391,7 +391,6 @@ text_sensor:
       icon: mdi:wifi-strength-2
       entity_category: diagnostic
 
-
 light:
   - platform: binary
     name: "${friendly_name} LED"
