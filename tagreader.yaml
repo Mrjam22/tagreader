@@ -370,9 +370,12 @@ output:
 - platform: gpio
   pin: D8
   id: activity_led_output
+- platform: esp8266_pwm
+  pin: D7
+  id: buzzer
 
 rtttl:
-  output: activity_led_output
+  output: buzzer
 
 binary_sensor:
   - platform: status
