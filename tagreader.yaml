@@ -371,6 +371,9 @@ output:
   pin: D8
   id: activity_led_output
 
+rtttl:
+  output: activity_led_output
+
 binary_sensor:
   - platform: status
     name: "${friendly_name} Status"
